@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+a:link{
+	color: #000000; /* Цвет ссылок */
+}
+a:visited {
+	color: #000000; /* Цвет посещенных ссылок */
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/s1.png);
+  background-size: cover;
+
+}
+ul,li {
+	display: inline-block;
+	text-decoration-line: none;
+}
+a {
+	position: relative;
+	color: #00a650; /*задаём цвет ссылки*/
+	cursor: pointer;
+	line-height: 1; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+
+}
+a:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #00a650; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s linear; /*задаём время анимации*/
+}
+a:hover:after,
+a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.name {
+position: relative;
+min-width: 300px;
+min-height: 300px;
+left: 0px;
+top: 15px;
+font-family: Rubik Mono One;
+font-size: 36px;
+line-height: 45px;
+text-align: center;
+}
+.about {
+	position: absolute;
+	font-family: Raleway;
+	font-size: 18px;
+	line-height: 20px;
+	text-decoration-line: underline;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	left: 1490px;
+	top: 50px;
+	line-height: 1.5;
+}
+.menu {
+	position: absolute;
+	display: flex;
+	left: 1400px;
+	top: 20px;
+	margin: 0;
+}
+.menu li a {
+	font-family: Raleway;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+	line-height: 20px;
+	text-decoration: none;
+}
+.menu li {
+    margin-right: 45px; /* каждый элемент вправо(отступы) */
+}
+#pic1
+{
+position: absolute;
+left: 0px;
+top: 110px;
+width: 100%;
+display: inline-block; /* Строчно-блочный элемент */
+overflow: hidden; /* Скрываем всё за контуром */
+}
+#pic1 img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+   }
+#pic1 img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+   }
+#name {
+position: absolute;
+width: 360px;
+height: 40px;
+left: 780px;
+top: 1050px;
+font-family: Segoe UI;
+font-style: normal;
+font-size: 20px;
+line-height: 40px;
+text-align: center;
+text-decoration-line: underline;
+color: #000000;
+}
+#left-bron {
+position: absolute;
+width: 150px;
+height: 32px;
+left: 800px;
+top: 1020px;
+font-family: Segoe UI;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 32px;
+text-align: center;
+display: flex;
+color: #000000;
+}
+#right-bron {
+position: absolute;
+width: 150px;
+height: 32px;
+left: 1010px;
+top: 1020px;
+font-family: Segoe UI;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 32px;
+text-align: center;
+display: flex;
+color: #000000;
+}
+@media screen and (min-width: 700px) {
+    .body {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 699px) {
+    .body {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+    .body {
+        font-size: 21px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 499px) {
+    .body {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 600px) {
+     body { background: #ffffff; }
+
